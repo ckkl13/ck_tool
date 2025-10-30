@@ -4,6 +4,12 @@ CK Tool 是一套面向 Maya 的综合效率工具集，集成了控制器管理
 
 ![界面截图](icons/界面.png)
 
+## 子模块文档
+
+[![Maya Controller Tool 1.2 界面](icons/控制器库界面.png)](MayaControllerTool%201.2/README.md)
+
+- 查看 Maya Controller Tool 1.2 的详细说明文档：`MayaControllerTool 1.2/README.md`
+
 ## 功能概览
 
 - 控制器曲线：创建多种形状、调整大小、镜像形状、替换形状
