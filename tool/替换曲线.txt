@@ -1,0 +1,22 @@
+import maya.cmds as cmds
+
+cmds.parent('nurbsCircle1','joint1_t',shape=True,add=True)
+
+
+
+
+
+
+from maya import cmds
+
+jnt = "joint3_t"
+crv = "nurbsCircle3"
+
+# 确保使用半角括号
+crv_shapes = cmds.listRelatives(crv, c=True, f=True)
+cmds.parent(crv_shapes, jnt, s=True, add=True)
+cmds.setAttr(jnt + ".drawStyle", 2)
+cmds.delete(crv)
+
+#形状结合mel
+parent -r -s

@@ -1,0 +1,11 @@
+proc string half_circle(){
+    string $control[] = `circle -c 0 0 0 -nr 1 0 0 -sw 360 -r 1 -d 3 -ut 0 -tol 0.01 -s 16 -ch 0`;
+    float $pos[];
+    for($i=6;$i<13;$i++){
+        $pos = `pointPosition -w ($control[0]+".cv["+$i+"]")`;
+        xform -t $pos[0] 0 $pos[2] -ws  ($control[0]+".cv["+$i+"]");
+        }
+    return $control[0];
+}
+
+half_circle();

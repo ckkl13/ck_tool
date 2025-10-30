@@ -1,0 +1,2 @@
+curve -d 1 -p -2 0 -1 -p -2 0 2 -p 0 0 3 -p 2 0 2 -p 2 0 -1 -k 0 -k 1 -k 2 -k 3 -k 4 ;
+closeCurve -ch 0 -ps 1 -rpo 1 -bb 0.5 -bki 0 -p 0.1;
